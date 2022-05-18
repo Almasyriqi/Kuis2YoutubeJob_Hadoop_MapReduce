@@ -1,7 +1,6 @@
 package org.example;
 
 import org.apache.hadoop.fs.Path;
-import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapred.*;
 import java.io.IOException;
@@ -10,10 +9,10 @@ public class App
     public static void main( String[] args )
     {
         JobConf conf = new JobConf(App.class);
-        conf.setJobName("RevenueAggreagtion");
+        conf.setJobName("YoutubeMapReduce");
 
         conf.setOutputKeyClass(Text.class);
-        conf.setOutputValueClass(IntWritable.class);
+        conf.setOutputValueClass(Text.class);
 
         conf.setMapperClass(YoutubeMapper.class);
         conf.setCombinerClass(YoutubeReducer.class);

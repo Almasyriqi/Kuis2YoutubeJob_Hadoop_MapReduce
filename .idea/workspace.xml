@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0848f9d9-092a-4697-851c-47cf0e879172" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/run-job.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="0848f9d9-092a-4697-851c-47cf0e879172" name="Changes" comment="Update mapper">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run-job.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run-job.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/YoutubeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/YoutubeMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/YoutubeReducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/YoutubeReducer.java" afterDir="false" />
@@ -59,6 +57,14 @@
       <option name="presentableId" value="Default" />
       <updated>1652840427716</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update mapper">
+      <created>1652873567031</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652873567031</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -71,5 +77,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update mapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update mapper" />
   </component>
 </project>

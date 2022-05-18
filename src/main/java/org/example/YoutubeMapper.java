@@ -18,14 +18,15 @@ public class YoutubeMapper extends MapReduceBase implements Mapper<LongWritable,
             throws IOException {
         String line = value.toString();
 
-        // Pecah dulu berdasarkan ','
-        String[] split = line.split(",");
+        // Pecah dulu berdasarkan ',;'
+        String[] split = line.split(",;");
         System.out.println("Jumlah Split: " + split.length);
 
         // cek apakah terdapat data view, like, dislike, dan comment
         if(split.length > 10) {
             String channel = split[3];
             channel = channel.trim();
+            channel = '"' + channel + '"';
             System.out.println("Channel title : " + channel);
 
             // Cari data views, like, dislike, comment
@@ -35,7 +36,7 @@ public class YoutubeMapper extends MapReduceBase implements Mapper<LongWritable,
             String comment = split[10];
 
             // Laporkan ke kolektor
-            this.channel_title.set(channel);
+            this.channel_title.set(format("%s,",channel));
             this.data.set(format("%s,%s,%s,%s", view, like, dislike, comment));
             output.collect(this.channel_title, this.data);
         }

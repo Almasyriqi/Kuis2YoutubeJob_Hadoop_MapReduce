@@ -5,7 +5,7 @@ IP_NAMENODE=172.20.10.3
 HOME_DIR=/home/hadoopuser/
 NAMA_JAR_TUJUAN=kuis2.jar
 PACKAGE_ID=org.example.App
-INPUT_FOLDER=/Riqi/InputKuis
+INPUT_FOLDER=/Riqi/InputKuis2
 OUTPUT_FOLDER=/Riqi/Output/hasil
 
 # Bersihkan console
